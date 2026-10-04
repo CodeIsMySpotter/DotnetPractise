@@ -1,0 +1,9 @@
+@NbpExchangeRateAggregator_HostAddress = http://localhost:5212
+
+### Zapytanie o kurs z ostatnich 5 dni
+GET {{NbpExchangeRateAggregator_HostAddress}}/api/ExchangeDataFetch/get/currencydata?currencyCode=USD&days=5
+Accept: application/json
+
+### Zapytanie o kurs euro z ostatnich 3 dni
+GET {{NbpExchangeRateAggregator_HostAddress}}/api/ExchangeDataFetch/get/currencydata?currencyCode=EUR&days=3
+Accept: application/json
